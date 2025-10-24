@@ -1,12 +1,13 @@
 import ExploreComponent from "@/components/ExploreComponent";
 import WallpaperDetail from "@/components/WallpaperDetail";
+import { WallPaper } from "@/types/wallpaper";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const Stack = createStackNavigator();
 
 export type ExploreStackParamList = {
     ExploreComponent: undefined;
-    WallpaperDetail: undefined;
+    WallpaperDetail: WallPaper;
 };
 
 const Explore = () => {
